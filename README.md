@@ -14,6 +14,8 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
+Note: For building rpm (RedHat Linux) packages you may need to `sudo apt-get install rpm` on Debian/Ubuntu systems.
+
 ## Installation
 
 * `git clone <repository-url>` this repository

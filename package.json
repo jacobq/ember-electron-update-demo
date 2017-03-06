@@ -8,6 +8,7 @@
     "doc": "doc",
     "test": "tests"
   },
+  "homepage": "https://github.com/jacobq/ember-electron-update-test",
   "repository": "git+ssh://git@github.com:jacobq/ember-electron-update-test.git",
   "scripts": {
     "build": "ember build",
