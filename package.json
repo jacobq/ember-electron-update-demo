@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "Bare-bones example using ember-electron and nuts/squirrel for automatic updates",
   "license": "MIT",
-  "author": "Jacob Quant <jacobq@gmail.com>",
+  "author": {
+    "name": "Jacob Quant",
+    "email": "jacobq@gmail.com"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -55,10 +58,12 @@
     "forge": {
       "make_targets": {
         "win32": [
-          "squirrel"
+          "squirrel",
+          "appx"
         ],
         "darwin": [
-          "zip"
+          "zip",
+          "dmg"
         ],
         "linux": [
           "deb",
@@ -70,8 +75,8 @@
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
       "github_repository": {
-        "owner": "",
-        "name": ""
+        "owner": "jacobq",
+        "name": "ember-electron-update-test"
       },
       "windowsStoreConfig": {
         "packageName": ""
