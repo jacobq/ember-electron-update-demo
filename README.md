@@ -1,7 +1,6 @@
 # ember-electron-update-test
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application is intended to provide a minimalistic example of one way to provide seamless software updates to an electron application based on `ember-electron` by using free git hosting from [GitHub](github.com) (containing update content) and free application hosting from [Heroku](heroku.com) (running [`nuts`](https://github.com/GitbookIO/nuts) server to facilitate updates).
 
 ## Prerequisites
 
@@ -18,35 +17,13 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd ember-electron-update-test`
 * `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
+* `ember electron` (to build & run / debug)
+* `ember electron:make` (to generate installation package)
 
 ## Further Reading / Useful Links
 
+* [electron autoUpdater](https://electron.atom.io/docs/api/auto-updater/)
+* [ember-electron](https://github.com/felixrieseberg/ember-electron)
 * [ember.js](http://emberjs.com/)
 * [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+* [nuts](https://github.com/GitbookIO/nuts)
