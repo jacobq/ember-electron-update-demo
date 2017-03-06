@@ -15,7 +15,11 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-preset-env": "^1.2.0",
+    "babel-preset-react": "^6.23.0",
     "broccoli-asset-rev": "^2.5.0",
+    "electron-prebuilt-compile": "1.4.15",
     "ember-ajax": "^2.5.6",
     "ember-cli": "2.11.1",
     "ember-cli-app-version": "^2.0.1",
@@ -32,6 +36,7 @@
     "ember-cli-test-loader": "^1.1.1",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.11.3",
+    "ember-electron": "git+ssh://git@github.com/felixrieseberg/ember-electron.git#master",
     "ember-export-application-global": "^1.1.1",
     "ember-load-initializers": "^0.6.3",
     "ember-resolver": "^2.1.1",
@@ -41,5 +46,44 @@
   "engines": {
     "node": ">= 0.12.0"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "electron-compile": "^6.1.2"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {},
+      "electronWinstallerConfig": {
+        "name": ""
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": ""
+      }
+    },
+    "ember-electron": {
+      "copy-files": [
+        "ember-electron/electron.js",
+        "package.json"
+      ]
+    }
+  },
+  "main": "ember-electron/electron.js"
 }
