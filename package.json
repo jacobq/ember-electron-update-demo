@@ -66,9 +66,7 @@
         ]
       },
       "electronPackagerConfig": {},
-      "electronWinstallerConfig": {
-        "name": "Example App"
-      },
+      "electronWinstallerConfig": {},
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
       "github_repository": {
