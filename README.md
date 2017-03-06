@@ -4,6 +4,12 @@ This application is intended to provide a minimalistic example of one way to pro
 
 At the time of writing `ember-electron` was transitioning from version 1.x to 2.x, so [`npm link` was used per these instructions](https://github.com/felixrieseberg/ember-electron/issues/160#issuecomment-284005502) to use the most up-to-date version.
 
+To generate the `Package.nuspec` file, [nuget.exe](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) was run with the `spec` parameter.
+(See [.nuspec reference](https://docs.microsoft.com/en-us/nuget/schema/nuspec))
+
+
+
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -26,8 +32,13 @@ Note: For building rpm (RedHat Linux) packages you may need to `sudo apt-get ins
 
 ## Further Reading / Useful Links
 
+* [nuget](https://www.nuget.org/)
 * [electron autoUpdater](https://electron.atom.io/docs/api/auto-updater/)
 * [ember-electron](https://github.com/felixrieseberg/ember-electron)
 * [ember.js](http://emberjs.com/)
 * [ember-cli](https://ember-cli.com/)
 * [nuts](https://github.com/GitbookIO/nuts)
+
+## License
+
+This software is provided free of charge under the terms of the MIT license. See [`LICENSE` file](./LICENSE) for details.
