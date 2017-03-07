@@ -4,7 +4,6 @@ This application is intended to provide a minimalistic example of one way to pro
 
 At the time of writing `ember-electron` was transitioning from version 1.x to 2.x, so [`npm link` was used per these instructions](https://github.com/felixrieseberg/ember-electron/issues/160#issuecomment-284005502) to use the most up-to-date version.
 
-
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -14,6 +13,8 @@ You will need the following things properly installed on your computer.
 * [Bower](https://bower.io/)
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+
+Note: to build as a Windows Store application you also need to install the [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk)
 
 Note: For building rpm (RedHat Linux) packages you may need to `sudo apt-get install rpm` on Debian/Ubuntu systems.
 
