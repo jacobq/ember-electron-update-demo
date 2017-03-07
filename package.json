@@ -58,6 +58,7 @@
     "forge": {
       "make_targets": {
         "win32": [
+          "zip",
           "squirrel",
           "appx"
         ],
@@ -66,13 +67,16 @@
           "dmg"
         ],
         "linux": [
+          "zip",
           "deb",
           "rpm"
         ]
       },
-      "electronPackagerConfig": {},
+      "electronPackagerConfig": {
+        "electronVersion": "1.6.1"
+      },
       "electronWinstallerConfig": {
-        
+
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},

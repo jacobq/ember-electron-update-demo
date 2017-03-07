@@ -4,6 +4,35 @@ This application is intended to provide a minimalistic example of one way to pro
 
 At the time of writing `ember-electron` was transitioning from version 1.x to 2.x, so [`npm link` was used per these instructions](https://github.com/felixrieseberg/ember-electron/issues/160#issuecomment-284005502) to use the most up-to-date version.
 
+```
+# Start from staging / project / workspace folder
+
+git clone git@github.com:jacobq/electron-forge.git
+cd electron-forge
+git checkout feat/make-platforms
+npm install
+cd .. 
+
+git clone git@github.com:felixrieseberg/ember-electron.git
+cd ember-electron
+npm install
+npm link ../electron-forge
+cd .. 
+
+git clone git@github.com:jacobq/ember-electron-update-test.git
+cd ember-electron-update-test
+npm install
+npm link ../ember-electron
+
+# To run
+ember electron
+
+# To package
+ember electron:package; ember electron:make
+
+```
+
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
