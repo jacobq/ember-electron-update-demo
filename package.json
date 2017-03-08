@@ -1,6 +1,6 @@
 {
   "name": "ember-electron-update-demo",
-  "version": "0.0.1",
+  "version": "0.0.2-SNAPSHOT",
   "description": "Bare-bones example using ember-electron and nuts/squirrel for automatic updates",
   "license": "MIT",
   "author": {
