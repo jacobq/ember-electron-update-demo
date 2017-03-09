@@ -23,7 +23,6 @@
     "test": "ember test",
     "make": "ember electron:package && ember electron:make"
   },
-  "main": "ember-electron/electron.js",
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.22.0",
     "babel-preset-env": "^1.2.1",
