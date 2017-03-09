@@ -1,6 +1,6 @@
 {
   "name": "ember-electron-update-demo",
-  "version": "0.0.2-SNAPSHOT",
+  "version": "0.0.2",
   "description": "Bare-bones example using ember-electron and nuts/squirrel for automatic updates",
   "license": "MIT",
   "author": {
@@ -23,6 +23,7 @@
     "test": "ember test",
     "make": "ember electron:package && ember electron:make"
   },
+  "main": "ember-electron/electron.js",
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.22.0",
     "babel-preset-env": "^1.2.1",
@@ -87,6 +88,5 @@
         "name": "ember-electron-update-demo"
       }
     }
-  },
-  "main": "ember-electron/electron.js"
+  }
 }
