@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-electron-update-test',
+    modulePrefix: 'ember-electron-update-demo',
     environment: environment,
     rootURL: null,
     locationType: 'hash',
@@ -29,7 +29,7 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
-    
+
     ENV.locationType = 'none';
 
     // keep test console output quieter
