@@ -1,3 +1,0 @@
-This file is in both public/ and public-linux/
-
-This is the version from public/
