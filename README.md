@@ -4,20 +4,33 @@ This application is intended to provide a minimalistic example of one way to pro
 
 At the time of writing `ember-electron` was transitioning from version 1.x to 2.x, and it was necessary to use [`npm link` per these instructions](https://github.com/felixrieseberg/ember-electron/issues/160#issuecomment-284005502) to make things work. This caused me much grief, so you may want to wait for 2.0 to be released before playing with this.
 
+
+## From scratch
+
 ```
-# (first clone and link ember-electron and electron-forge repositories)
-
-# Download and prepare this code
-git clone git@github.com:jacobq/ember-electron-update-demo.git
-cd ember-electron-update-demo
+git clone git+ssh://git@github.com/isleofcode/electron-forge
+cd electron-forge
+git checkout feat/make-platforms
 npm install
+npm link # may require elevation (i.e. sudo)
+cd ..
 
-# To run
-ember electron
+git clone git+ssh://git@github.com/felixrieseberg/ember-electron
+cd ember-electron
+npm link electron-forge
+npm install
+cd ..
 
-# To package
-ember electron:package; ember electron:make
+ember new demo-app
+cd demo-app
+npm link ember-electron
+ember install felixrieseberg/ember-electron
+ember g ember-electron
 
+# TODO: edit config & files
+npm install
+ember electron # To run
+ember electron:package; ember electron:make # To package
 ```
 
 
