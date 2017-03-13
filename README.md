@@ -8,24 +8,30 @@ At the time of writing `ember-electron` was transitioning from version 1.x to 2.
 ## From scratch
 
 ```
+# (Note: it's normally not this complicated -- just due to pending PRs right now)
 git clone git+ssh://git@github.com/isleofcode/electron-forge
 cd electron-forge
 git checkout feat/make-platforms
 npm install
-npm link # may require elevation (i.e. sudo)
+npm link
 cd ..
 
 git clone git+ssh://git@github.com/felixrieseberg/ember-electron
 cd ember-electron
 npm link electron-forge
 npm install
+npm link
 cd ..
+
+# (This is normally where one would start)
 
 ember new demo-app
 cd demo-app
+# (Normally the following would just be `ember install ember-electron`)
+npm install --save-dev ember-electron@file:///abs/path/to/ember-electron
 npm link ember-electron
-ember install felixrieseberg/ember-electron
 ember g ember-electron
+npm link electron-forge
 
 # TODO: edit config & files
 npm install
