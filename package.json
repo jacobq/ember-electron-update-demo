@@ -15,7 +15,11 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-preset-env": "^1.2.1",
+    "babel-preset-react": "^6.23.0",
     "broccoli-asset-rev": "^2.5.0",
+    "electron-prebuilt-compile": "1.6.2",
     "ember-ajax": "^2.5.6",
     "ember-cli": "2.11.1",
     "ember-cli-app-version": "^2.0.2",
@@ -32,6 +36,7 @@
     "ember-cli-test-loader": "^1.1.1",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.12.0",
+    "ember-electron": "file:///home/jquant/Documents/KFMT/Software/ember-electron",
     "ember-export-application-global": "^1.1.1",
     "ember-load-initializers": "^0.6.3",
     "ember-resolver": "^3.0.0",
@@ -41,5 +46,12 @@
   "engines": {
     "node": ">= 0.12.0"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "electron-compile": "^6.1.3",
+    "electron-protocol-serve": "^1.1.0"
+  },
+  "config": {
+    "forge": "./ember-electron/.electron-forge"
+  }
 }
