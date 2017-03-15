@@ -1,5 +1,10 @@
 # ember-electron-update-demo
 
+# **Important:** These instructions are currently out of date. Please check back after `ember-electron` v2.0 is released. 
+
+
+## Introduction
+
 This application is intended to provide a minimalistic example of one way to provide seamless software updates to an electron application based on `ember-electron` by using free git hosting from [GitHub](github.com) (containing update content) and free application hosting from [Heroku](heroku.com) (running [`nuts`](https://github.com/GitbookIO/nuts) server to facilitate updates).
 
 At the time of writing `ember-electron` was transitioning from version 1.x to 2.x, and it was necessary to use [`npm link` per these instructions](https://github.com/felixrieseberg/ember-electron/issues/160#issuecomment-284005502) to make things work. This caused me much grief, so you may want to wait for 2.0 to be released before playing with this.
